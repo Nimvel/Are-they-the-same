@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function comp(array1, array2){
+        if (array1 == null || array2 == null) {return false};
+        return array1.every((el, i) => array2.includes(el ** 2) ? 
+                                array2.splice(array2.indexOf(el ** 2), 1) : false);
+        }
+    </script>
+</body>
+</html>
